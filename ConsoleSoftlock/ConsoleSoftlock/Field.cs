@@ -30,5 +30,10 @@ namespace ConsoleSoftlock
                 for (int x = 0; x < Width; x++)
                     Grid[x, y] = cell;
         }
+
+        public void SetCell (ICell cell, int x, int y)
+        {
+            Grid[x, y] = cell;
+        }
     }
 }

@@ -9,6 +9,6 @@ namespace ConsoleSoftlock
     public abstract class Player
     {
         public int Score;
-        public abstract int GetAction(GameState state);
+        public abstract int[] GetAction(GameState state);
     }
 }

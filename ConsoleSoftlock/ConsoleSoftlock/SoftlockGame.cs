@@ -32,30 +32,34 @@ namespace ConsoleSoftlock
             {
                 if (CurrentPlayer == null) break;
 
-                int? action;
+                int[]? action;
                 do action = CurrentPlayer.GetAction(State);
                 while (IsActionValid(action));
 
-                // Как я и говорил, пиздец ниже починим, но для этого нужен Илюша
-                /*
-                switch (action)
+                switch (action[0])
                 {
                     case 1:
-                        if (CurrentPlayer == P1)
-                            State.Player1Field.Grid[0, 0] = new Barrack();
+                        // Стрельба
+                        break;
+                    case 2:
+                        if (action[3] == 1)
+                        {
+                            if (CurrentPlayer == P1)
+                                State.Player1Field.SetCell(new Barrack(), action[2], action[1]);
+                            else
+                                State.Player2Field.SetCell(new Barrack(), action[2], action[1]);
+                        } else if (action[3] == 2)
+                        {
+                            if (CurrentPlayer == P1)
+                                State.Player1Field.SetCell(new Trap(), action[2], action[1]);
+                            else
+                                State.Player2Field.SetCell(new Trap(), action[2], action[1]);
+                        }
                         break;
                 }
-                */
-                // А пока предположим что в 100% случаев игрок ставит казарму
 
-                if (CurrentPlayer == P1)
-                    State.Player1Field.Grid[(int)(action % 10), (int)(action / 10)] = new Barrack();
-                else
-                    State.Player2Field.Grid[(int)(action % 10), (int)(action / 10)] = new Barrack();
-
-                //-----------------------------------------------
-
-                var actionResult = State.ApplyAction(action.Value);
+                /*
+                var actionResult = State.ApplyAction(1); // Уточнить у Илюшки
 
                 if (actionResult == 1)
                 {
@@ -63,12 +67,17 @@ namespace ConsoleSoftlock
                     Console.WriteLine("========");
                     State.Player2Field.Out();
                 }
+                */
+
+                State.Player1Field.Out();
+                Console.WriteLine("========");
+                State.Player2Field.Out();
 
                 State.CurrentPlayer = CurrentPlayer == P1 ? P2 : P1;
             }
             IsRunning = false;
         }
-        private bool IsActionValid(int? a)
+        private bool IsActionValid(int[]? a)
         {
             return a == null;
         }
