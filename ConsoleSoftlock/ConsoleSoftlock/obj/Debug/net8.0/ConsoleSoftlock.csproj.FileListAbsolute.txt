@@ -12,3 +12,18 @@ C:\Users\user\source\repos\ConsoleSoftlock\ConsoleSoftlock\obj\Debug\net8.0\refi
 C:\Users\user\source\repos\ConsoleSoftlock\ConsoleSoftlock\obj\Debug\net8.0\ConsoleSoftlock.pdb
 C:\Users\user\source\repos\ConsoleSoftlock\ConsoleSoftlock\obj\Debug\net8.0\ConsoleSoftlock.genruntimeconfig.cache
 C:\Users\user\source\repos\ConsoleSoftlock\ConsoleSoftlock\obj\Debug\net8.0\ref\ConsoleSoftlock.dll
+C:\Users\Dan Round\Documents\Разный мусор\Softlock\Softlock\ConsoleSoftlock\ConsoleSoftlock\bin\Debug\net8.0\ConsoleSoftlock.exe
+C:\Users\Dan Round\Documents\Разный мусор\Softlock\Softlock\ConsoleSoftlock\ConsoleSoftlock\bin\Debug\net8.0\ConsoleSoftlock.deps.json
+C:\Users\Dan Round\Documents\Разный мусор\Softlock\Softlock\ConsoleSoftlock\ConsoleSoftlock\bin\Debug\net8.0\ConsoleSoftlock.runtimeconfig.json
+C:\Users\Dan Round\Documents\Разный мусор\Softlock\Softlock\ConsoleSoftlock\ConsoleSoftlock\bin\Debug\net8.0\ConsoleSoftlock.dll
+C:\Users\Dan Round\Documents\Разный мусор\Softlock\Softlock\ConsoleSoftlock\ConsoleSoftlock\bin\Debug\net8.0\ConsoleSoftlock.pdb
+C:\Users\Dan Round\Documents\Разный мусор\Softlock\Softlock\ConsoleSoftlock\ConsoleSoftlock\obj\Debug\net8.0\ConsoleSoftlock.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dan Round\Documents\Разный мусор\Softlock\Softlock\ConsoleSoftlock\ConsoleSoftlock\obj\Debug\net8.0\ConsoleSoftlock.AssemblyInfoInputs.cache
+C:\Users\Dan Round\Documents\Разный мусор\Softlock\Softlock\ConsoleSoftlock\ConsoleSoftlock\obj\Debug\net8.0\ConsoleSoftlock.AssemblyInfo.cs
+C:\Users\Dan Round\Documents\Разный мусор\Softlock\Softlock\ConsoleSoftlock\ConsoleSoftlock\obj\Debug\net8.0\ConsoleSoftlock.csproj.CoreCompileInputs.cache
+C:\Users\Dan Round\Documents\Разный мусор\Softlock\Softlock\ConsoleSoftlock\ConsoleSoftlock\obj\Debug\net8.0\ConsoleSoftlock.sourcelink.json
+C:\Users\Dan Round\Documents\Разный мусор\Softlock\Softlock\ConsoleSoftlock\ConsoleSoftlock\obj\Debug\net8.0\ConsoleSoftlock.dll
+C:\Users\Dan Round\Documents\Разный мусор\Softlock\Softlock\ConsoleSoftlock\ConsoleSoftlock\obj\Debug\net8.0\refint\ConsoleSoftlock.dll
+C:\Users\Dan Round\Documents\Разный мусор\Softlock\Softlock\ConsoleSoftlock\ConsoleSoftlock\obj\Debug\net8.0\ConsoleSoftlock.pdb
+C:\Users\Dan Round\Documents\Разный мусор\Softlock\Softlock\ConsoleSoftlock\ConsoleSoftlock\obj\Debug\net8.0\ConsoleSoftlock.genruntimeconfig.cache
+C:\Users\Dan Round\Documents\Разный мусор\Softlock\Softlock\ConsoleSoftlock\ConsoleSoftlock\obj\Debug\net8.0\ref\ConsoleSoftlock.dll

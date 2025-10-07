@@ -8,6 +8,6 @@ namespace ConsoleSoftlock.Interfaces
 {
     public interface ICell
     {
-
+        public char Symbol { get; set; }
     }
 }
