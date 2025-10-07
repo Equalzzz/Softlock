@@ -28,9 +28,16 @@ namespace ConsoleSoftlock
             State.Player1Field.Fill(new VoidPlace());
             State.Player2Field.Fill(new VoidPlace());
 
+            PrintFields();
+
             while (IsRunning)
             {
                 if (CurrentPlayer == null) break;
+
+                if (CurrentPlayer == P1)
+                    Console.Write("[P1] ");
+                else
+                    Console.Write("[P2] ");
 
                 int[]? action;
                 do action = CurrentPlayer.GetAction(State);
@@ -58,20 +65,7 @@ namespace ConsoleSoftlock
                         break;
                 }
 
-                /*
-                var actionResult = State.ApplyAction(1); // Уточнить у Илюшки
-
-                if (actionResult == 1)
-                {
-                    State.Player1Field.Out();
-                    Console.WriteLine("========");
-                    State.Player2Field.Out();
-                }
-                */
-
-                State.Player1Field.Out();
-                Console.WriteLine("========");
-                State.Player2Field.Out();
+                PrintFields();
 
                 State.CurrentPlayer = CurrentPlayer == P1 ? P2 : P1;
             }
@@ -80,6 +74,35 @@ namespace ConsoleSoftlock
         private bool IsActionValid(int[]? a)
         {
             return a == null;
+        }
+
+        private void PrintFields()
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write("  ");
+            for (int x = 0; x < State.Player1Field.Width; x++)
+            {
+                Console.Write((x + 1));
+            }
+
+            Console.Write("     ");
+
+            for (int x = 0; x < State.Player1Field.Width; x++)
+            {
+                Console.Write((x + 1));
+            }
+
+            Console.Write("\n");
+
+            for (int y = 0; y < State.Player1Field.Height; y++)
+            {
+                Console.Write((y + 1) + " ");
+                State.Player1Field.OutLine(y);
+                Console.Write(" [ ] ");
+                State.Player2Field.OutLine(y);
+                Console.Write(" " + (y + 1) + "\n");
+            }
+            Console.ForegroundColor = ConsoleColor.Gray;
         }
     }
 }

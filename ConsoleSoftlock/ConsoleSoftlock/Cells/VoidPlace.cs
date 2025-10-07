@@ -13,7 +13,7 @@ namespace ConsoleSoftlock.Cells
         
         public VoidPlace ()
         {
-            Symbol = '-';
+            Symbol = '·';
         }
     }
 }

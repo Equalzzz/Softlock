@@ -34,8 +34,8 @@ namespace ConsoleSoftlock
                     }
                     while (!TryParseInputToPosition(input, out pos));
 
-                    action[1] = pos.Item1;
-                    action[2] = pos.Item2;
+                    action[1] = pos.Item1 - 1;
+                    action[2] = pos.Item2 - 1;
                     break;
                 case "2":
                     action[0] = 2;
@@ -47,8 +47,8 @@ namespace ConsoleSoftlock
                     }
                     while (!TryParseInputToPosition(input, out pos));
 
-                    action[1] = pos.Item1;
-                    action[2] = pos.Item2;
+                    action[1] = pos.Item1 -1;
+                    action[2] = pos.Item2 - 1;
 
                     Console.Write("You've inputed these coords: ");
                     Console.Write(pos + "\n");

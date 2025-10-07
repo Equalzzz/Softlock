@@ -14,14 +14,10 @@ namespace ConsoleSoftlock
         public int Width { get; } = width;
         public int Height { get; } = height;
 
-        public void Out ()
+        public void OutLine (int y)
         {
-            for (int y = 0; y < Height; y++)
-            {
-                for (int x = 0; x < Width; x++)
-                    Console.Write(Grid[x, y].Symbol);
-                Console.Write("\n");
-            }
+            for (int x = 0; x < Width; x++)
+                Console.Write(Grid[x, y].Symbol);
         }
 
         public void Fill (ICell cell)
