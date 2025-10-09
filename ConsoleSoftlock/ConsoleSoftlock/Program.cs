@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConsoleSoftlock
+﻿namespace ConsoleSoftlock
 {
     public static class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Player p1 = new KeyboardPlayer();
             Player p2 = new KeyboardPlayer();

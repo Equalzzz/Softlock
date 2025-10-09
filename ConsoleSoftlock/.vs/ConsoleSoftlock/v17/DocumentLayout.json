@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects\\VisualStudio\\Softlock\\ConsoleSoftlock\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FE4E5E47-6982-4F22-9866-0E84B62A45D0}|ConsoleSoftlock\\ConsoleSoftlock.csproj|d:\\projects\\visualstudio\\softlock\\consolesoftlock\\consolesoftlock\\softlock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE4E5E47-6982-4F22-9866-0E84B62A45D0}|ConsoleSoftlock\\ConsoleSoftlock.csproj|solutionrelative:consolesoftlock\\softlock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE4E5E47-6982-4F22-9866-0E84B62A45D0}|ConsoleSoftlock\\ConsoleSoftlock.csproj|d:\\projects\\visualstudio\\softlock\\consolesoftlock\\consolesoftlock\\softlockinputinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE4E5E47-6982-4F22-9866-0E84B62A45D0}|ConsoleSoftlock\\ConsoleSoftlock.csproj|solutionrelative:consolesoftlock\\softlockinputinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE4E5E47-6982-4F22-9866-0E84B62A45D0}|ConsoleSoftlock\\ConsoleSoftlock.csproj|d:\\projects\\visualstudio\\softlock\\consolesoftlock\\consolesoftlock\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE4E5E47-6982-4F22-9866-0E84B62A45D0}|ConsoleSoftlock\\ConsoleSoftlock.csproj|solutionrelative:consolesoftlock\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE4E5E47-6982-4F22-9866-0E84B62A45D0}|ConsoleSoftlock\\ConsoleSoftlock.csproj|d:\\projects\\visualstudio\\softlock\\consolesoftlock\\consolesoftlock\\bulding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE4E5E47-6982-4F22-9866-0E84B62A45D0}|ConsoleSoftlock\\ConsoleSoftlock.csproj|solutionrelative:consolesoftlock\\bulding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE4E5E47-6982-4F22-9866-0E84B62A45D0}|ConsoleSoftlock\\ConsoleSoftlock.csproj|d:\\projects\\visualstudio\\softlock\\consolesoftlock\\consolesoftlock\\math.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE4E5E47-6982-4F22-9866-0E84B62A45D0}|ConsoleSoftlock\\ConsoleSoftlock.csproj|solutionrelative:consolesoftlock\\math.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Softlock.cs",
+              "DocumentMoniker": "D:\\Projects\\VisualStudio\\Softlock\\ConsoleSoftlock\\ConsoleSoftlock\\Softlock.cs",
+              "RelativeDocumentMoniker": "ConsoleSoftlock\\Softlock.cs",
+              "ToolTip": "D:\\Projects\\VisualStudio\\Softlock\\ConsoleSoftlock\\ConsoleSoftlock\\Softlock.cs",
+              "RelativeToolTip": "ConsoleSoftlock\\Softlock.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T14:32:46.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Math.cs",
+              "DocumentMoniker": "D:\\Projects\\VisualStudio\\Softlock\\ConsoleSoftlock\\ConsoleSoftlock\\Math.cs",
+              "RelativeDocumentMoniker": "ConsoleSoftlock\\Math.cs",
+              "ToolTip": "D:\\Projects\\VisualStudio\\Softlock\\ConsoleSoftlock\\ConsoleSoftlock\\Math.cs",
+              "RelativeToolTip": "ConsoleSoftlock\\Math.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T14:32:30.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Bulding.cs",
+              "DocumentMoniker": "D:\\Projects\\VisualStudio\\Softlock\\ConsoleSoftlock\\ConsoleSoftlock\\Bulding.cs",
+              "RelativeDocumentMoniker": "ConsoleSoftlock\\Bulding.cs",
+              "ToolTip": "D:\\Projects\\VisualStudio\\Softlock\\ConsoleSoftlock\\ConsoleSoftlock\\Bulding.cs",
+              "RelativeToolTip": "ConsoleSoftlock\\Bulding.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAuwD8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T14:32:29.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SoftlockInputInterface.cs",
+              "DocumentMoniker": "D:\\Projects\\VisualStudio\\Softlock\\ConsoleSoftlock\\ConsoleSoftlock\\SoftlockInputInterface.cs",
+              "RelativeDocumentMoniker": "ConsoleSoftlock\\SoftlockInputInterface.cs",
+              "ToolTip": "D:\\Projects\\VisualStudio\\Softlock\\ConsoleSoftlock\\ConsoleSoftlock\\SoftlockInputInterface.cs",
+              "RelativeToolTip": "ConsoleSoftlock\\SoftlockInputInterface.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T14:32:24.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projects\\VisualStudio\\Softlock\\ConsoleSoftlock\\ConsoleSoftlock\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleSoftlock\\Program.cs",
+              "ToolTip": "D:\\Projects\\VisualStudio\\Softlock\\ConsoleSoftlock\\ConsoleSoftlock\\Program.cs",
+              "RelativeToolTip": "ConsoleSoftlock\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T14:32:17.625Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
