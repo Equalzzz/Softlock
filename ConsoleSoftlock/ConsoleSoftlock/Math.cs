@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-namespace ConsoleSoftlock
+﻿namespace ConsoleSoftlock
 {
-    public struct Vec2(float x, float y)
+    public struct Vec2(float x, float y) // Чтобы было
     {
         public float x = x, y = y;
         public Vec2(float a) : this(a, a) { }

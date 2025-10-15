@@ -1,4 +1,8 @@
-﻿namespace ConsoleSoftlock
+﻿using ConsoleSoftlock.Building;
+using ConsoleSoftlock.Building.Buildings;
+using ConsoleSoftlock.InputInterface;
+
+namespace ConsoleSoftlock
 {
     public readonly struct Field(Player owner, int width, int height)
     {
@@ -46,7 +50,7 @@
             field = default;
             return false;
         }
-        public string[] GetGraphics() // <- Это самый уебещный комит ever!
+        public string[] GetGraphics()
         {
             List<string> res = [];
             string top = "  ";
@@ -105,21 +109,21 @@
             }
             IsRunning = false;
         }
-        private bool IsActionValid(IPlayerAction action)
+        public bool IsActionValid(IPlayerAction action)
         {
             if (action is BuildAction build)
             {
                 if (State.TryGetField(State.CurrentPlayer, out var f) &&
                     (f.Grid[build.x, build.y] is BuildingCell cell &&
                     cell.IsReplaceableBy(BuildingTypeRegistry.AllTypes[build.id]) ||
-                    f.Grid[build.x, build.y] == null))
+                    Activator.CreateInstance(BuildingTypeRegistry.AllTypes[build.id]) is BuildingCell builtCell && builtCell.CanBePlacedOn(f.Grid[build.x, build.y]?.GetType()!)))
                     return true;
             }
-            else if (action is ActivateAction activate)
+            else if (action is InteractAction activate)
             {
                 if (State.TryGetField(State.CurrentPlayer, out var f) &&
-                    f.Grid[activate.x, activate.y] is IActivateable cell &&
-                    cell.CanBeActivated(State, activate))
+                    f.Grid[activate.x, activate.y] is IInteractive cell &&
+                    cell.CanBeInteracted(State, activate))
                     return true;
             }
             return false;

@@ -1,45 +1,14 @@
-﻿using System;
+﻿using ConsoleSoftlock.Building;
+using ConsoleSoftlock.Building.Buildings;
 using System.Reflection;
 
-namespace ConsoleSoftlock
+namespace ConsoleSoftlock.InputInterface
 {
-    public interface IPlayerAction
-    {
-        public void PerformAction(GameState state);
-    }
-    public readonly struct BuildAction(int x, int y, int id, Direction direction) : IPlayerAction
-    {
-        public readonly int x = x, y = y, id = id;
-        public readonly Direction direction = direction;
-
-        public void PerformAction(GameState state)
-        {
-            if (!state.TryGetField(state.CurrentPlayer, out var field)) return;
-            if (Activator.CreateInstance(BuildingTypeRegistry.AllTypes[id]) is BuildingCell cell)
-                field.Grid[x, y] = cell;
-        }
-    }
-    public readonly struct ActivateAction(int x, int y, Direction direction) : IPlayerAction
-    {
-        public readonly int x = x, y = y;
-        public readonly Direction direction = direction;
-
-        public void PerformAction(GameState state)
-        {
-            // TODO: 
-            Console.Beep();
-        }
-    }
-    public abstract class Player
-    {
-        public int Score;
-        public abstract IPlayerAction? GetAction(GameState state);
-    }
     public class KeyboardPlayer : Player
     {
         public override IPlayerAction? GetAction(GameState state)
         {
-            // Вспомогательные методы
+            // Utils
             Queue<string> inputQueue = new();
             string GetNextToken(string prompt)
             {
@@ -60,14 +29,14 @@ namespace ConsoleSoftlock
                 Console.WriteLine(errmsg);
                 Console.ResetColor();
             }
-            
-            // Данные
+
+            // Data
             bool isBuild;
             int row = -1, column = -1, ID = -1;
             Direction direction = Direction.None;
-            
-            // Валидность выбора действия
-            while (true) 
+
+            // Validate action choice
+            while (true)
             {
                 string token = GetNextToken("Build or Activate? (B/A): ");
                 if (token.Length != 1 || token[0] != 'a' && token[0] != 'b')
@@ -79,20 +48,20 @@ namespace ConsoleSoftlock
                 isBuild = token[0] == 'b';
                 break;
             }
-            
-            // Валидность координаты x
-            while (column == -1) 
+
+            // Validate X coord
+            while (column == -1)
             {
                 state.TryGetField(this, out var field);
-                string token = GetNextToken($"Input col [1-{field.Width}]: ");
+                string token = GetNextToken($"Input collumn [1-{field.Width}]: ");
                 if (int.TryParse(token, out int x) && x >= 1 && x <= field.Width)
                     column = x - 1;
                 else
                     PrintError($"Incorrect input. You can only input an integer in range [1-{field.Width}].");
             }
-            
-            // Валидность координаты y
-            while (row == -1) 
+
+            // Validate Y coord
+            while (row == -1)
             {
                 state.TryGetField(this, out var field);
                 string token = GetNextToken($"Input row [1-{field.Height}]: ");
@@ -101,8 +70,8 @@ namespace ConsoleSoftlock
                 else
                     PrintError($"Incorrect input. You can only input an integer in range [1-{field.Height}].");
             }
-            
-            // Валидность выбора id постройки
+
+            // Validate building id
             var types = BuildingTypeRegistry.AllTypes;
             if (isBuild)
             {
@@ -128,7 +97,7 @@ namespace ConsoleSoftlock
                 }
             }
 
-            // Валидность выбора направления
+            // Validate direction choice
             if (!state.TryGetField(this, out Field f)) return null;
             if (isBuild && types[ID] is IDirectional directionalBuild && directionalBuild.IsPlacementDirectional ||
                 !isBuild && f.Grid[column, row] is IDirectional foundDirectionalBuild && foundDirectionalBuild.IsActivationDirectional)
@@ -158,8 +127,8 @@ namespace ConsoleSoftlock
                         PrintError("Incorrect input. You can only input an integer in range [1-4] or letters [rlud] or words [right, left, up, down].");
                 }
             }
-            
-            // Финальная валидация 
+
+            // Final validation
             if (isBuild)
             {
                 if (f.Grid[column, row] is BuildingCell cell && !cell.IsReplaceableBy(types[ID]))
@@ -167,12 +136,17 @@ namespace ConsoleSoftlock
                     PrintError($"Incorrect placement. You cannot replace {cell.GetType().GetCustomAttribute<NamedBuildingAttribute>()?.Name} building by {types[ID].GetCustomAttribute<NamedBuildingAttribute>()?.Name}\nPress ANY to re-enter values...");
                     Console.ReadKey();
                 }
+                else if (Activator.CreateInstance(types[ID]) is BuildingCell thisCell && !thisCell.CanBePlacedOn(f.Grid[column, row]?.GetType()!))
+                {
+                    PrintError($"Incorrect placement. You cannot place {thisCell.GetType().GetCustomAttribute<NamedBuildingAttribute>()?.Name} building on top of {(f.Grid[column, row] == null ? "empty cell" : f.Grid[column, row].GetType().GetCustomAttribute<NamedBuildingAttribute>()?.Name)}\nPress ANY to re-enter values...");
+                    Console.ReadKey();
+                }
                 else return new BuildAction(column, row, ID, direction);
             }
             else
             {
-                var action = new ActivateAction(column, row, direction);
-                if (f.Grid[column, row] is IActivateable cell && !cell.CanBeActivated(state, action))
+                var action = new InteractAction(column, row, direction);
+                if (f.Grid[column, row] is IInteractive cell && !cell.CanBeInteracted(state, action))
                 {
                     PrintError($"Incorrect action. You currently cannot activate building {cell.GetType().GetCustomAttribute<NamedBuildingAttribute>()?.Name}\nPress ANY to re-enter values...");
                     Console.ReadKey();
