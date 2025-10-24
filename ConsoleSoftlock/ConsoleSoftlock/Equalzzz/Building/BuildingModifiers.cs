@@ -1,6 +1,6 @@
-﻿using ConsoleSoftlock.InputInterface;
+﻿using ConsoleSoftlock.Equalzzz.InputInterface;
 
-namespace ConsoleSoftlock.Building
+namespace ConsoleSoftlock.Equalzzz.Building
 {
     public enum Direction
     {

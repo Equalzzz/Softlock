@@ -1,6 +1,7 @@
-﻿using ConsoleSoftlock.InputInterface;
+﻿using ConsoleSoftlock.Equalzzz.Building;
+using ConsoleSoftlock.Equalzzz.InputInterface;
 
-namespace ConsoleSoftlock.Building.Buildings
+namespace ConsoleSoftlock.Equalzzz.Building.Buildings
 {
     [NamedBuilding("Barracks")]
     public class Barracks : BuildingCell, IDirectional, IInteractive, IUpdatable

@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace ConsoleSoftlock.Building
+namespace ConsoleSoftlock.Equalzzz.Building
 {
     [AttributeUsage(AttributeTargets.Class)]
     public class NamedBuildingAttribute(string name, string? description = null) : Attribute

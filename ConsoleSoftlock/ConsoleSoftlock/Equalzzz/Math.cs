@@ -1,4 +1,4 @@
-﻿namespace ConsoleSoftlock
+﻿namespace ConsoleSoftlock.Equalzzz
 {
     public struct Vec2(float x, float y) // Чтобы было
     {
@@ -6,14 +6,14 @@
         public Vec2(float a) : this(a, a) { }
 
         public readonly float Length => MathF.Sqrt(x * x + y * y);
-        public readonly Vec2 Unit => (x == 0f && y == 0f) ? new() : this / Length;
+        public readonly Vec2 Unit => x == 0f && y == 0f ? new() : this / Length;
         public static Vec2 Left => new(-1, 0);
         public static Vec2 Right => new(1, 0);
         public static Vec2 Up => new(0, 1);
         public static Vec2 Down => new(0, -1);
         public static Vec2 One => new(1);
         public static Vec2 Zero => new(0);
-        
+
         public static Vec2 operator +(Vec2 v1, Vec2 v2) =>
             new(v1.x + v2.x, v1.y + v2.y);
         public static Vec2 operator -(Vec2 v1, Vec2 v2) =>

@@ -1,8 +1,8 @@
-﻿using ConsoleSoftlock.Building;
-using ConsoleSoftlock.Building.Buildings;
+﻿using ConsoleSoftlock.Equalzzz.Building;
+using ConsoleSoftlock.Equalzzz.Building.Buildings;
 using System.Reflection;
 
-namespace ConsoleSoftlock.InputInterface
+namespace ConsoleSoftlock.Equalzzz.InputInterface
 {
     public class KeyboardPlayer : Player
     {

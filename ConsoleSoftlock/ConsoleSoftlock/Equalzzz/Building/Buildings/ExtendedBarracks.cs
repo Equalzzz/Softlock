@@ -1,4 +1,4 @@
-﻿namespace ConsoleSoftlock.Building.Buildings
+﻿namespace ConsoleSoftlock.Equalzzz.Building.Buildings
 {
     [NamedBuilding("Extended barracks")]
     public class ExtendedBarracks : Barracks

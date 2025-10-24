@@ -1,7 +1,7 @@
-﻿using ConsoleSoftlock.Building;
-using ConsoleSoftlock.Building.Buildings;
+﻿using ConsoleSoftlock.Equalzzz.Building;
+using ConsoleSoftlock.Equalzzz.Building.Buildings;
 
-namespace ConsoleSoftlock.InputInterface
+namespace ConsoleSoftlock.Equalzzz.InputInterface
 {
     public interface IPlayerAction
     {

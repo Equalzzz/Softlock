@@ -1,4 +1,4 @@
-﻿namespace ConsoleSoftlock.InputInterface
+﻿namespace ConsoleSoftlock.Equalzzz.InputInterface
 {
     public abstract class Player
     {

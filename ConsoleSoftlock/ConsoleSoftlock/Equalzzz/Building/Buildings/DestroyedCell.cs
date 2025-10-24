@@ -1,4 +1,4 @@
-﻿namespace ConsoleSoftlock.Building.Buildings
+﻿namespace ConsoleSoftlock.Equalzzz.Building.Buildings
 {
     public class DestroyedCell(BuildingCell? previousCell = null) : BuildingCell
     {
