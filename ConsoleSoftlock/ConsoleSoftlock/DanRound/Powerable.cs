@@ -8,6 +8,6 @@ namespace ConsoleSoftlock.DanRound
 {
     public interface Powerable
     {
-        public bool IsPowered();
+        public bool IsPowered(GameField field);
     }
 }

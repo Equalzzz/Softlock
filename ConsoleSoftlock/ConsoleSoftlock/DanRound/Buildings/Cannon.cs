@@ -38,7 +38,7 @@ namespace ConsoleSoftlock.DanRound.Buildings
                     Building? building = field1.Field[y, i].Building;
                     if (building != null)
                     {
-                        if (building is Powerable && building is Protection && ((Powerable)building).IsPowered() && ((Protection)building).IsProtectingRockets)
+                        if (building is Powerable && building is Protection && ((Powerable)building).IsPowered(field1) && ((Protection)building).IsProtectingRockets)
                         {
                             isScoreUp = false;
                             break;
@@ -59,7 +59,7 @@ namespace ConsoleSoftlock.DanRound.Buildings
                         Building? building = field2.Field[y, i].Building;
                         if (building != null)
                         {
-                            if (building is Powerable && building is Protection && ((Powerable)building).IsPowered() && ((Protection)building).IsProtectingRockets)
+                            if (building is Powerable && building is Protection && ((Powerable)building).IsPowered(field2) && ((Protection)building).IsProtectingRockets)
                             {
                                 isScoreUp = false;
                                 break;
@@ -82,7 +82,7 @@ namespace ConsoleSoftlock.DanRound.Buildings
                     Building? building = field1.Field[y, i].Building;
                     if (building != null)
                     {
-                        if (building is Powerable && building is Protection && ((Powerable)building).IsPowered() && ((Protection)building).IsProtectingRockets)
+                        if (building is Powerable && building is Protection && ((Powerable)building).IsPowered(field1) && ((Protection)building).IsProtectingRockets)
                         {
                             isScoreUp = false;
                             break;
@@ -103,7 +103,7 @@ namespace ConsoleSoftlock.DanRound.Buildings
                         Building? building = field2.Field[y, i].Building;
                         if (building != null)
                         {
-                            if (building is Powerable && building is Protection && ((Powerable)building).IsPowered() && ((Protection)building).IsProtectingRockets)
+                            if (building is Powerable && building is Protection && ((Powerable)building).IsPowered(field2) && ((Protection)building).IsProtectingRockets)
                             {
                                 isScoreUp = false;
                                 break;
@@ -119,12 +119,26 @@ namespace ConsoleSoftlock.DanRound.Buildings
                 }
             }
 
-            return isScoreUp && IsPowered();
+            return isScoreUp && IsPowered(field1);
         }
 
-        public bool IsPowered()
+        public bool IsPowered(GameField field)
         {
-            return true;
+            bool isPowered = false;
+
+            int x = Position.Pos.x;
+            int y = Position.Pos.y;
+
+            if (y != 7 && field.Field[y + 1, x].Building is Barracks)
+                isPowered = true;
+            if (y != 0 && field.Field[y - 1, x].Building is Barracks)
+                isPowered = true;
+            if (x != 0 && field.Field[y, x - 1].Building is Barracks)
+                isPowered = true;
+            if (x != 7 && field.Field[y, x + 1].Building is Barracks)
+                isPowered = true;
+
+            return isPowered;
         }
     }
 }

@@ -25,9 +25,23 @@ namespace ConsoleSoftlock.DanRound.Buildings
             IsTransparent = true;
         }
 
-        public bool IsPowered()
+        public bool IsPowered(GameField field)
         {
-            return true;
+            bool isPowered = false;
+
+            int x = Position.Pos.x;
+            int y = Position.Pos.y;
+
+            if (y != 7 && field.Field[y + 1, x].Building is Barracks)
+                isPowered = true;
+            if (y != 0 && field.Field[y - 1, x].Building is Barracks)
+                isPowered = true;
+            if (x != 0 && field.Field[y, x - 1].Building is Barracks)
+                isPowered = true;
+            if (x != 7 && field.Field[y, x + 1].Building is Barracks)
+                isPowered = true;
+
+            return isPowered;
         }
     }
 }

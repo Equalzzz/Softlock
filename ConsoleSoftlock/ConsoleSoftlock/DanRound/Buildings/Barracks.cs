@@ -38,7 +38,7 @@ namespace ConsoleSoftlock.DanRound.Buildings
                     Building? building = field1.Field[y, i].Building;
                     if (building != null)
                     {
-                        if (building is Powerable && building is Protection && ((Powerable)building).IsPowered() && ((Protection)building).IsProtectingSoliders)
+                        if (building is Powerable && building is Protection && ((Powerable)building).IsPowered(field1) && ((Protection)building).IsProtectingSoliders)
                         {
                             isScoreUp = false;
                             break;
@@ -58,7 +58,7 @@ namespace ConsoleSoftlock.DanRound.Buildings
                         Building? building = field2.Field[y, i].Building;
                         if (building != null)
                         {
-                            if (building is Powerable && building is Protection && ((Powerable)building).IsPowered() && ((Protection)building).IsProtectingSoliders)
+                            if (building is Powerable && building is Protection && ((Powerable)building).IsPowered(field2) && ((Protection)building).IsProtectingSoliders)
                             {
                                 isScoreUp = false;
                                 break;
@@ -81,7 +81,7 @@ namespace ConsoleSoftlock.DanRound.Buildings
                     Building? building = field1.Field[y, i].Building;
                     if (building != null)
                     {
-                        if (building is Powerable && building is Protection && ((Powerable)building).IsPowered() && ((Protection)building).IsProtectingSoliders)
+                        if (building is Powerable && building is Protection && ((Powerable)building).IsPowered(field1) && ((Protection)building).IsProtectingSoliders)
                         {
                             isScoreUp = false;
                             break;
@@ -102,7 +102,7 @@ namespace ConsoleSoftlock.DanRound.Buildings
                         Building? building = field2.Field[y, i].Building;
                         if (building != null)
                         {
-                            if (building is Powerable && building is Protection && ((Powerable)building).IsPowered() && ((Protection)building).IsProtectingSoliders)
+                            if (building is Powerable && building is Protection && ((Powerable)building).IsPowered(field2) && ((Protection)building).IsProtectingSoliders)
                             {
                                 isScoreUp = false;
                                 break;
