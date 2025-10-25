@@ -43,6 +43,7 @@ namespace ConsoleSoftlock.DanRound
                 }
                 field += (y + 1).ToString() + "\n";
             }
+            field += "Ход " + CurrentPlayer.Name + "\n";
             return field;
         }
 
