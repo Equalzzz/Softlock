@@ -11,6 +11,6 @@ namespace ConsoleSoftlock.DanRound
         public bool IsShootingSoliders { get; set; }
         public bool IsShootingRockets { get; set; }
 
-        public void Shoot();
+        public bool Shoot(GameField field1, GameField field2, Direction direction);
     }
 }

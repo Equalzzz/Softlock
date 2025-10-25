@@ -22,9 +22,9 @@ namespace ConsoleSoftlock
 
             GameManager gameManager = new GameManager(p1, p2);
 
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.ForegroundColor = ConsoleColor.Green;
 
-            gameManager.PrintField();
+            gameManager.StartGame();
         }
     }
 }

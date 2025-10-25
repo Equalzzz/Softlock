@@ -8,13 +8,15 @@ namespace ConsoleSoftlock.DanRound
 {
     public class Player
     {
-        public String Name { get; set; }
+        public string Name { get; set; }
         public GameField Field { get; set; }
+        public int Score { get; set; }
 
         public Player (string name, GameField field)
         {
             Name = name;
             Field = field;
+            Score = 0;
         }
     }
 }

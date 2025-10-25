@@ -8,8 +8,6 @@ namespace ConsoleSoftlock.DanRound
 {
     public interface Powerable
     {
-        public bool IsPowered { get; set; }
-
-        public void OnPowered();
+        public bool IsPowered();
     }
 }

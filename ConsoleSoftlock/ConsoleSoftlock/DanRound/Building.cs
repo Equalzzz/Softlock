@@ -8,10 +8,10 @@ namespace ConsoleSoftlock.DanRound
 {
     public abstract class Building
     {
-        public Vector2 Position { get; }
-        public char Symbol { get; }
-        public bool IsTransparent { get; set; }
+        public abstract Vector2 Position { get; set; }
+        public abstract char Symbol { get; set; }
+        public abstract bool IsTransparent { get; set; }
 
-        public Building(Vector2 position, char symbol) { Position = position; Symbol = symbol; }
+        //public Building(Vector2 position, char symbol) { Position = position; Symbol = symbol; }
     }
 }
