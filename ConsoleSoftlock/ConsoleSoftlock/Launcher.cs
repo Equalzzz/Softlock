@@ -1,19 +1,17 @@
 ﻿using ConsoleSoftlock.DanRound;
+using System.Net;
+using System.Net.Sockets;
 
 namespace ConsoleSoftlock
 {
     public static class Launcher
     {
+        static string GetLogo ()
+        {
+            return File.ReadAllText("MainMenuLogo.txt");
+        }
         static void Main()
         {
-            // For ability to work with most symbols needed
-            //Console.OutputEncoding = System.Text.Encoding.UTF8;
-            //Player p1 = new KeyboardPlayer();
-            //Player p2 = new KeyboardPlayer();
-
-            //SoftlockGame game = new(p1, p2, 8);
-            //game.StartGameLoop(p1);
-
             GameField f1 = new GameField();
             GameField f2 = new GameField();
 
@@ -24,7 +22,33 @@ namespace ConsoleSoftlock
 
             Console.ForegroundColor = ConsoleColor.Green;
 
-            gameManager.StartGame();
+            Menu MainMenu = new Menu("Режим игры:", new List<string>() { "> Игра на одном устройстве", "> Игра по сети" });
+            int gameMode = MainMenu.MenuProccess(GetLogo());
+            if (gameMode == 0)
+                gameManager.StartGame();
+            else
+            {
+                MainMenu = new Menu("Выберите опцию:", [ "> Создать сервер", "> Подключиться" ]);
+                gameMode = MainMenu.MenuProccess(GetLogo());
+                Console.WriteLine(GetLogo() + "\n Введите айпи:");
+                if (gameMode == 0)
+                {
+                    IPEndPoint endPoint = new IPEndPoint(IPAddress.Parse(Console.ReadLine()), 12345);
+                    Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+                    socket.Bind(endPoint);
+                    socket.Listen(1);
+                    Socket client = socket.Accept();
+                    Console.Clear();
+                    gameManager.StartMultiplayerGameHostSide(client);
+                    
+                } else
+                {
+                    Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+                    socket.Connect(Console.ReadLine(), 12345);
+                    Console.Clear();
+                    gameManager.StartMultiplayerGameClientSide(socket);
+                }
+            }
         }
     }
 }

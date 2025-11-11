@@ -43,7 +43,7 @@ namespace ConsoleSoftlock.DanRound.Buildings
                             isScoreUp = false;
                             break;
                         }
-                        else if (!building.IsTransparent)
+                        else if (!building.IsTransparent && IsPowered(field1))
                         {
                             isScoreUp = false;
                             field1.Field[y, i].Collapse();
@@ -64,7 +64,7 @@ namespace ConsoleSoftlock.DanRound.Buildings
                                 isScoreUp = false;
                                 break;
                             }
-                            else if (!building.IsTransparent)
+                            else if (!building.IsTransparent && IsPowered(field1))
                             {
                                 isScoreUp = false;
                                 field2.Field[y, i].Collapse();
@@ -87,7 +87,7 @@ namespace ConsoleSoftlock.DanRound.Buildings
                             isScoreUp = false;
                             break;
                         }
-                        else if (!building.IsTransparent)
+                        else if (!building.IsTransparent && IsPowered(field2))
                         {
                             isScoreUp = false;
                             field1.Field[y, i].Collapse();
@@ -108,7 +108,7 @@ namespace ConsoleSoftlock.DanRound.Buildings
                                 isScoreUp = false;
                                 break;
                             }
-                            else if (!building.IsTransparent)
+                            else if (!building.IsTransparent && IsPowered(field2))
                             {
                                 isScoreUp = false;
                                 field2.Field[y, i].Collapse();
