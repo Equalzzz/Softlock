@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConsoleSoftlock")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bbfdde5c99247cb8f1e18a234a02eec441393460")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConsoleSoftlock")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConsoleSoftlock")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

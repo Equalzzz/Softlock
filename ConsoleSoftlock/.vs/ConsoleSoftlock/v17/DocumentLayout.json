@@ -1,0 +1,119 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects\\VisualStudio\\Softlock\\ConsoleSoftlock\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FE4E5E47-6982-4F22-9866-0E84B62A45D0}|ConsoleSoftlock\\ConsoleSoftlock.csproj|d:\\projects\\visualstudio\\softlock\\consolesoftlock\\consolesoftlock\\rules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE4E5E47-6982-4F22-9866-0E84B62A45D0}|ConsoleSoftlock\\ConsoleSoftlock.csproj|solutionrelative:consolesoftlock\\rules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE4E5E47-6982-4F22-9866-0E84B62A45D0}|ConsoleSoftlock\\ConsoleSoftlock.csproj|d:\\projects\\visualstudio\\softlock\\consolesoftlock\\consolesoftlock\\softlock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE4E5E47-6982-4F22-9866-0E84B62A45D0}|ConsoleSoftlock\\ConsoleSoftlock.csproj|solutionrelative:consolesoftlock\\softlock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE4E5E47-6982-4F22-9866-0E84B62A45D0}|ConsoleSoftlock\\ConsoleSoftlock.csproj|d:\\projects\\visualstudio\\softlock\\consolesoftlock\\consolesoftlock\\launcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE4E5E47-6982-4F22-9866-0E84B62A45D0}|ConsoleSoftlock\\ConsoleSoftlock.csproj|solutionrelative:consolesoftlock\\launcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE4E5E47-6982-4F22-9866-0E84B62A45D0}|ConsoleSoftlock\\ConsoleSoftlock.csproj|d:\\projects\\visualstudio\\softlock\\consolesoftlock\\consolesoftlock\\inputinterface\\playeractions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE4E5E47-6982-4F22-9866-0E84B62A45D0}|ConsoleSoftlock\\ConsoleSoftlock.csproj|solutionrelative:consolesoftlock\\inputinterface\\playeractions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE4E5E47-6982-4F22-9866-0E84B62A45D0}|ConsoleSoftlock\\ConsoleSoftlock.csproj|d:\\projects\\visualstudio\\softlock\\consolesoftlock\\consolesoftlock\\inputinterface\\keyboardplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE4E5E47-6982-4F22-9866-0E84B62A45D0}|ConsoleSoftlock\\ConsoleSoftlock.csproj|solutionrelative:consolesoftlock\\inputinterface\\keyboardplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE4E5E47-6982-4F22-9866-0E84B62A45D0}|ConsoleSoftlock\\ConsoleSoftlock.csproj|d:\\projects\\visualstudio\\softlock\\consolesoftlock\\consolesoftlock\\inputinterface\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE4E5E47-6982-4F22-9866-0E84B62A45D0}|ConsoleSoftlock\\ConsoleSoftlock.csproj|solutionrelative:consolesoftlock\\inputinterface\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Rules.cs",
+              "DocumentMoniker": "D:\\Projects\\VisualStudio\\Softlock\\ConsoleSoftlock\\ConsoleSoftlock\\Rules.cs",
+              "RelativeDocumentMoniker": "ConsoleSoftlock\\Rules.cs",
+              "ToolTip": "D:\\Projects\\VisualStudio\\Softlock\\ConsoleSoftlock\\ConsoleSoftlock\\Rules.cs",
+              "RelativeToolTip": "ConsoleSoftlock\\Rules.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T16:39:59.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Launcher.cs",
+              "DocumentMoniker": "D:\\Projects\\VisualStudio\\Softlock\\ConsoleSoftlock\\ConsoleSoftlock\\Launcher.cs",
+              "RelativeDocumentMoniker": "ConsoleSoftlock\\Launcher.cs",
+              "ToolTip": "D:\\Projects\\VisualStudio\\Softlock\\ConsoleSoftlock\\ConsoleSoftlock\\Launcher.cs",
+              "RelativeToolTip": "ConsoleSoftlock\\Launcher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T20:47:23.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Softlock.cs",
+              "DocumentMoniker": "D:\\Projects\\VisualStudio\\Softlock\\ConsoleSoftlock\\ConsoleSoftlock\\Softlock.cs",
+              "RelativeDocumentMoniker": "ConsoleSoftlock\\Softlock.cs",
+              "ToolTip": "D:\\Projects\\VisualStudio\\Softlock\\ConsoleSoftlock\\ConsoleSoftlock\\Softlock.cs",
+              "RelativeToolTip": "ConsoleSoftlock\\Softlock.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAAAAAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T20:46:55.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerActions.cs",
+              "DocumentMoniker": "D:\\Projects\\VisualStudio\\Softlock\\ConsoleSoftlock\\ConsoleSoftlock\\InputInterface\\PlayerActions.cs",
+              "RelativeDocumentMoniker": "ConsoleSoftlock\\InputInterface\\PlayerActions.cs",
+              "ToolTip": "D:\\Projects\\VisualStudio\\Softlock\\ConsoleSoftlock\\ConsoleSoftlock\\InputInterface\\PlayerActions.cs",
+              "RelativeToolTip": "ConsoleSoftlock\\InputInterface\\PlayerActions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T20:46:53.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "KeyboardPlayer.cs",
+              "DocumentMoniker": "D:\\Projects\\VisualStudio\\Softlock\\ConsoleSoftlock\\ConsoleSoftlock\\InputInterface\\KeyboardPlayer.cs",
+              "RelativeDocumentMoniker": "ConsoleSoftlock\\InputInterface\\KeyboardPlayer.cs",
+              "ToolTip": "D:\\Projects\\VisualStudio\\Softlock\\ConsoleSoftlock\\ConsoleSoftlock\\InputInterface\\KeyboardPlayer.cs",
+              "RelativeToolTip": "ConsoleSoftlock\\InputInterface\\KeyboardPlayer.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAAAAAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T20:46:47.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Player.cs",
+              "DocumentMoniker": "D:\\Projects\\VisualStudio\\Softlock\\ConsoleSoftlock\\ConsoleSoftlock\\InputInterface\\Player.cs",
+              "RelativeDocumentMoniker": "ConsoleSoftlock\\InputInterface\\Player.cs",
+              "ToolTip": "D:\\Projects\\VisualStudio\\Softlock\\ConsoleSoftlock\\ConsoleSoftlock\\InputInterface\\Player.cs",
+              "RelativeToolTip": "ConsoleSoftlock\\InputInterface\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-10T20:31:23.305Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
